@@ -1,0 +1,32 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cynthia4950/proshop.git"
+  },
+  "author": "JingyingXie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cynthia4950/proshop/issues"
+  },
+  "homepage": "https://github.com/cynthia4950/proshop#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "mon": "0.0.8",
+    "node": "^14.13.0"
+  }
+}
